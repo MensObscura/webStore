@@ -20,5 +20,18 @@
                 <h6 class="centered sixteen colums">WebStore J2EE</h6>
             </div>
             <hr/>
-            <p class="row center_text"><i class="icon-home"></i><a href="index.jsp">Home</a> - <i class="icon-tag"></i><a href="addBookForm.jsp">Add a new Book</a> - <i class="icon-basket"></i><a href="listBooks.jsp">Buy Books</a> - <i class="icon-attach"></i><a href="basket.jsp">Basket</a> - <i class="icon-alert"></i><a href="commands.jsp">Commands</a>  - <i class="icon-floppy"></i><a href="register.jsp">Register</a> / <a href="login.jsp">Login</a> / <a href="logout.jsp">Logout</a></p>
+            <%  String nbBook ="", pseudo = "";
+                try {
+                   pseudo = (String) session.getAttribute("userPseudo");
+                   if(!pseudo.isEmpty()) {
+                        String[] books = (String[]) session.getAttribute("booksCommand");
+                        nbBook+="("+books.length+")";
+                   }
+                
+                } catch (NullPointerException e) {
+                       nbBook ="";
+                }
+                out.println( "<p class=\"row center_text\"><i class=\"icon-home\"></i><a href=\"index.jsp\">Home</a> - <i class=\"icon-tag\"></i><a href=\"addBookForm.jsp\">Add a new Book</a> - <i class=\"icon-basket\"></i><a href=\"listBooks.jsp\">Buy Books</a> - <i class=\"icon-attach\"></i><a href=\"basket.jsp\">Basket " + nbBook + "</a> - <i class=\"icon-alert\"></i><a href=\"commands.jsp\">Commands</a>  - <i class=\"icon-floppy\"></i><a href=\"register.jsp\">Register</a> / <a href=\"login.jsp\">Login</a> / <a href=\"logout.jsp\">Logout</a></p>");
+                %>
+           
             <hr/>
