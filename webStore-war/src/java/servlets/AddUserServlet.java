@@ -45,10 +45,14 @@ public class AddUserServlet extends HttpServlet {
             if ("addUser".equals(request.getParameter("action"))) {
                 String pseudo = request.getParameter("pseudo");
                 String password = request.getParameter("password");
+                String password_bis = request.getParameter("password_bis");
                 String permission = request.getParameter("userPermission") ;
                 if (pseudo.equals("") || password.equals("") || permission.equals("")) {
                     out.println(new PageWeb("<div class=\"row center_text\"><div class=\"centered four columns\"><li class=\"danger alert\">Fields can not be empty !</li></div></div>").toString()); 
-                } else {
+                }
+                else if (!password_bis.equals(password) ) {
+                    out.println(new PageWeb("<div class=\"row center_text\"><div class=\"centered four columns\"><li class=\"danger alert\">Password don't match !</li></div></div>").toString()); 
+                }else {
                     String permission_lvl = "user" ;
                     if (permission.equals("1")) {
                         permission_lvl = "admin" ;
