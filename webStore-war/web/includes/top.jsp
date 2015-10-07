@@ -17,12 +17,23 @@
      <body>
         <div id="container" class="container">
            <div id="header" class="row">
-                <h6 class="centered sixteen colums">WebStore J2EE</h6>
+                <h6 class="centered sixteen colums">WebStore J2EE
+                <%
+                String pseudo = "";
+                try {
+                    pseudo = (String) session.getAttribute("userPseudo");
+                    if(!pseudo.isEmpty())
+                        out.println(" " + pseudo );
+                } catch (NullPointerException e) {
+                    pseudo = "";
+                }
+                %>
+                
+                </h6>
             </div>
             <hr/>
-            <%  String nbBook ="", pseudo = "";
+            <%  String nbBook ="";
                 try {
-                   pseudo = (String) session.getAttribute("userPseudo");
                    if(!pseudo.isEmpty()) {
                         String[] books = (String[]) session.getAttribute("booksCommand");
                         nbBook+="("+books.length+")";
