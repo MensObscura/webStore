@@ -1,7 +1,7 @@
 1er Lot
 ----------
 
-Piorité: URGENT Complexité : 4  Ratio : 4/4 Acceptation : Accepté au 1er Lot
+1) Piorité: URGENT Complexité : 4  Ratio : 4/4 Acceptation : Accepté au 1er Lot
 Etant donné que je suis sur la page de création client
 Quand je renseigne mon mot de passe
 Alors je dois confirmer mon mot de passe
@@ -10,31 +10,31 @@ Alors je dois confirmer mon mot de passe
 
 
 
-Piorité: MOYENNE Complexité : 3  Ratio : 2/3 Acceptation : Accepté au 1er Lot
+2) Piorité: MOYENNE Complexité : 3  Ratio : 2/3 Acceptation : Accepté au 1er Lot
 Etant donné que je suis utilisateur identifié sur le WebStore et que mon panier n'est pas vide
 Quand j'accède à la liste des livres
 Je veux voir le nombre de livres que contient mon panier
 
 
-Piorité: MOYENNE   Complexité : 4  Ratio : 2/4 Acceptation : Accepté au 1er Lot
+3) Piorité: MOYENNE   Complexité : 4  Ratio : 2/4 Acceptation : Accepté au 1er Lot
 Etant donné que je suis utilisateur identifié sur le WebStore et que mon panier contient des livres
 Quand je clique sur le récapitulatif panier
 Alors je veux être redirigé vers la page du panier
 
 
-Piorité: IMPORTANT Complexité : 5  Ratio : 3/5  Acceptation : Accepté au 1er Lot
+4) Piorité: IMPORTANT Complexité : 5  Ratio : 3/5  Acceptation : Accepté au 1er Lot
 Etant donné que je suis utilisateur identifié sur le WebStore
 Quand je suis sur le webstore
 Alors je veux pouvoir me déconnecter
 
 
-Piorité: IMPORTANT  Complexité : 2  Ratio : 3/2  Acceptation : Accepté au 1er Lot
+5) Piorité: IMPORTANT  Complexité : 2  Ratio : 3/2  Acceptation : Accepté au 1er Lot
 Etant donné que je suis utilisateur identifié sur le WebStore
 Quand je suis sur le webstore
 Alors je veux voir un message d'accueil avec mon nom (Bonjour M. Test)
 
 
-Piorité: URGENT Complexité : 1  Ratio : 4/1 Acceptation : Accepté au 1er Lot
+6) Piorité: URGENT Complexité : 1  Ratio : 4/1 Acceptation : Accepté au 1er Lot
 Etant donné que je suis sur la page de création ou d'identification client
 Quand j'entre mon mot de passe et ma confirmation de mot de passe
 Alors je ne veux pas voir mon mot de passe en clair
