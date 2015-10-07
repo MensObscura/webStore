@@ -36,6 +36,7 @@
                 output += "<tr><td>" + book.getId() + "</td><td>"+book.getAuthor()+"</td><td>"+book.getDate()+"</td><td><input type=\"checkbox\" name=\"book\" value=\""+book.getId()+"\"></td></tr>" ;
             }
             output += "</table></form>" ;
+            output += "<p class=\"row center_text\">Number of book :"+ booksCommand.length +"</>";
             out.println(output);
         
             out.println("<br/><form class=\"row center_text\" action=\"AddBooks2BasketServlet\" method=\"GET\"><input type=\"hidden\" name=\"action\" value=\"validCommand\" /><div class=\"medium default btn pretty\"><input type=\"submit\" value=\"Valid your basket\"/></div></form>");
