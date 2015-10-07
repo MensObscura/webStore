@@ -12,5 +12,5 @@
    session.removeAttribute("booksCommand");
    
    response.setStatus(response.SC_MOVED_TEMPORARILY);
-   response.setHeader("Location", "/webStore-war/"); 
+   response.setHeader("Location", "/WEB-INF/"); 
 %>
